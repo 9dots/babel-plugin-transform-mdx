@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-mdx",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Turn MDX into React function calls",
   "repository": "https://github.com/9dots/babel-plugin-transform-mdx",
   "license": "MIT",
