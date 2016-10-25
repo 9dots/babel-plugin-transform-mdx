@@ -1,11 +1,11 @@
-# babel-plugin-transform-react-jsx
+# babel-plugin-transform-mdx
 
-Turn JSX into React function calls
+Turn MDX into function calls
 
 ## Installation
 
 ```sh
-$ npm install babel-plugin-transform-react-jsx
+$ npm install babel-plugin-transform-mdx
 ```
 
 ## Usage
@@ -17,13 +17,13 @@ $ npm install babel-plugin-transform-react-jsx
 ```js
 // without options
 {
-  "plugins": ["transform-react-jsx"]
+  "plugins": ["transform-mdx"]
 }
 // with options
 {
   "plugins": [
-    ["transform-react-jsx", {
-      "pragma": "dom" // default pragma is React.createElement
+    ["transform-mdx", {
+      "pragma": "element"
     }]
   ]
 }
@@ -32,13 +32,13 @@ $ npm install babel-plugin-transform-react-jsx
 ### Via CLI
 
 ```sh
-$ babel --plugins transform-react-jsx script.js
+$ babel --plugins transform-mdx script.js
 ```
 
 ### Via Node API
 
 ```javascript
 require("babel-core").transform("code", {
-  plugins: ["transform-react-jsx"]
+  plugins: ["transform-mdx"]
 });
 ```
